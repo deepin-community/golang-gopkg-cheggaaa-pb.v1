@@ -1,5 +1,140 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-gopkg-cheggaaa-pb.v1 (1.0.25-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Drop symlink for github.com/cheggaaa/pb
+    golang-github-cheggaaa-pb.v3-dev provides it
+  * Update section to golang
+  * Update debhelper-compat to 13
+  * Update Standards-Version to 4.6.2 (no changes)
+  * Add Multi-Arch hint
+  * Add Rules-Requires-Root
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 11 Aug 2023 16:49:13 +0800
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.25-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 21 Aug 2021 12:11:32 +0100
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.25-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release 1.0.25.
+  * Update team mail address to team+pkg-go@tracker.debian.org.
+  * Update Standards-Version to 4.2.1. (no changes)
+  * Update debhelper and compat to 11.
+  * Remove test depends from -dev package.
+  * Add autopkgtest-pkg-go testsuite
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 18 Sep 2018 23:13:44 +0800
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.22-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add github.com/cheggaaa/pb to import paths.
+  * Fix insecure-copyright-format-uri.
+  * Fix priority-extra-is-replaced-by-priority-optional.
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 22 Jun 2018 12:15:22 -0400
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.22-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 15 May 2018 09:05:23 +0900
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.22-1~exp0) experimental; urgency=medium
+
+  [Nobuhiro Iwamatsu]
+  * Team upload.
+  * New upstream release.
+
+  [Alexandre Viau]
+  * Point Vcs-* urls to salsa.debian.org.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Thu, 26 Apr 2018 07:56:56 +0900
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.18-1~exp0) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Add golang-github-mattn-go-runewidth-dev to Build-Depends and Depends.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Wed, 10 Jan 2018 09:01:11 +0900
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.6-2) UNRELEASED; urgency=medium
+
+  * Point Vcs-* urls to salsa.debian.org.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 02 Apr 2018 21:49:10 -0400
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 10
+  * Build-depend on golang-any instead of golang-go
+  * Drop dependency on golang-go from -dev package
+  * Update debian/watch to use package name for tarball
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 19 Nov 2016 23:25:25 -0500
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.5-2) unstable; urgency=medium
+
+  * Remove Built-Using field from -dev package
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 24 Sep 2016 00:57:19 -0400
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.5-1) unstable; urgency=medium
+
+  [ Peter Colberg ]
+  * New upstream release
+
+  [ Tim Potter ]
+  * Add me as uploader
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 17 Jul 2016 16:17:25 -0400
+
+golang-gopkg-cheggaaa-pb.v1 (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #824601)
+  * Rename source package to golang-gopkg-cheggaaa-pb.v1
+  * Rename binary package to golang-gopkg-cheggaaa-pb.v1-dev
+  * Update XS-Go-Import-Path
+  * Drop Conflicts/Provides/Replaces for golang-pb-dev
+  * Update Standards-Version to 3.9.8
+
+ -- Peter Colberg <peter@colberg.org>  Tue, 17 May 2016 22:45:21 -0400
+
+golang-github-cheggaaa-pb (0.0~git20160304.0.a75ad33-1) unstable; urgency=medium
+
+  * New upstream snapshot (Closes: #817096)
+  * Rename source package to golang-github-cheggaaa-pb
+  * Rename binary package to golang-github-cheggaaa-pb-dev
+  * Add Conflicts/Provides/Replaces for golang-pb-dev
+  * Set Maintainer to Debian Go Packaging Team
+  * Add myself to Uploaders
+  * Update Vcs-Git and Vcs-Browser fields
+  * Add Build-Depends/Depends on golang-github-fatih-color-dev
+  * Add Build-Depends/Depends on golang-github-mattn-go-colorable-dev
+  * Add Built-Using field
+  * Add XS-Go-Import-Path field
+  * Add Upstream-Name/Upstream-Contact/Source to debian/copyright
+  * Update Standards-Version to 3.9.7
+  * Install upstream README.md
+  * Add debian/gbp.conf
+  * Add debian/watch
+  * Reword synopsis
+
+ -- Peter Colberg <peter@colberg.org>  Tue, 08 Mar 2016 08:16:46 -0500
+
+golang-pb (0.0~git20131219-1) unstable; urgency=low
+
+  * Initial release (Closes: #732636)
+
+ -- Sergio Schvezov <sergio.schvezov@canonical.com>  Thu, 19 Dec 2013 12:55:59 -0300
